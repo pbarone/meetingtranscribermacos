@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app needs access to your microphone to record audio from meetings and conversations for transcription.</string>
+	<key>NSScreenCaptureUsageDescription</key>
+	<string>This app needs access to screen recording to capture system audio from video conferencing applications and other audio sources.</string>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>This app needs to send Apple Events to integrate with system services.</string>
+	<key>CFBundleDisplayName</key>
+	<string>Meeting Transcriber</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>15.0</string>
+</dict>
+</plist>
