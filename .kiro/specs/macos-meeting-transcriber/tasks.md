@@ -68,24 +68,24 @@ This implementation plan breaks down the macOS Meeting Transcriber into incremen
 - Reuse models and services where possible
 - Remove mock data as real implementations are added
 
-- [ ] 4. Implement audio device enumeration
-  - [ ] 4.1 Create AudioDevice model
+- [x] 4. Implement audio device enumeration
+  - [x] 4.1 Create AudioDevice model
     - Define AudioDevice struct with id, name, type, isDefault, isAvailable
     - Implement Identifiable and Codable conformance
     - _Requirements: 1.1, 1.2_
   
-  - [ ] 4.2 Create AudioDeviceManager service
+  - [x] 4.2 Create AudioDeviceManager service
     - Implement getInputDevices() using AVFoundation
     - Implement getOutputDevices() using ScreenCaptureKit
     - Handle device enumeration errors gracefully
     - _Requirements: 1.1, 1.2_
   
-  - [ ] 4.3 Implement default device identification
+  - [x] 4.3 Implement default device identification
     - Mark default input device in enumeration
     - Mark default output device in enumeration
     - _Requirements: 1.5, 1.6_
   
-  - [ ] 4.4 Add device change notifications
+  - [x] 4.4 Add device change notifications
     - Subscribe to AVCaptureDevice notifications for input devices
     - Subscribe to ScreenCaptureKit notifications for output devices
     - Update device list when devices connect/disconnect
